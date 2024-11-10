@@ -1,6 +1,11 @@
 import { useState } from 'react';
 
-export default function TableFilter() {
+
+type TableFilterProps = {
+    onSelectType: (type: string | null) => void;
+  };
+
+export default function TableFilter({ onSelectType }: TableFilterProps) {
   const [selectedType, setSelectedType] = useState<string | null>(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 

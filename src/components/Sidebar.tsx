@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { 
   FiHome, FiMail, FiUsers, FiInbox, FiSettings, 
-  FiPhone, FiFilter, FiTool, FiHelpCircle, FiUser 
+  FiPhone, FiFilter, FiTool, FiHelpCircle 
 } from 'react-icons/fi';
 
 export default function Sidebar() {

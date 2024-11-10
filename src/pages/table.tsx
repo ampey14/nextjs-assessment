@@ -1,8 +1,6 @@
 // src/pages/table.tsx
 import { useState, useEffect } from 'react';
-import Sidebar from '../components/Sidebar';
 import Pagination from '../components/Pagination';
-import LoadingSpinner from '../components/LoadingSpinner';
 import { fetchData } from '../services/api';
 import { ApiDataType } from '../types/apiData';
 import { format } from "date-fns";
@@ -19,7 +17,7 @@ const TablePage = ({ filterType }: TablePageProps) => {
   const [error, setError] = useState('');
 
     const filteredData = filterType
-    ? data.filter(item => item.body === filterType) // Adjust `item.type` based on your data structure
+    ? data.filter(item => item.body === filterType) 
     : data;
 
 
